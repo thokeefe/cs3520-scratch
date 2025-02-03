@@ -6,6 +6,8 @@ You can paste the code into scratch.cpp from the demo to run in VS Code.
 */
 
 /* ANSWER:
+mystery 1 - 1,141,899,961 (16.37%)
+mystery 2 - 5,831,727,541 (83.61%)
 */
 
 #include <iostream>
