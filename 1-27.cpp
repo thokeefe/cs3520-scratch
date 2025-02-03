@@ -5,7 +5,7 @@ Write a pair of overloaded functions, named swapnumbers, that will swap the valu
 #include <iostream>
 using namespace std;
 
-void swapnumbers(int & a, double & b) {
+void swapnumbers(int & a, int & b) {
     double tmp = a;
     a = b;
     b = tmp;
