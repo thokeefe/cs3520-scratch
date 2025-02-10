@@ -29,16 +29,26 @@ private:
   Cell m_cell;
 };
 
-class Bishop /* TODO */ {
+class Bishop: public ChessPiece /* TODO */ {
 public:
   // TODO
+  Bishop(const Cell & cell): ChessPiece(cell) {}
+  virtual ~Bishop() {}
+  virtual bool isLegalMove(const Cell & cell) const override final {
+    return abs(cell.row - getCell().row) == abs(cell.col - getCell().col);
+  }
 private:
  // TODO
 };
 
-class Rook /* TODO */ {
+class Rook: public ChessPiece /* TODO */ {
 public:
   // TODO
+  Rook(const Cell & cell): ChessPiece(cell) {}
+  virtual ~Rook() {}
+  virtual bool isLegalMove(const Cell & cell) const override final {
+    return cell.row == getCell().row || cell.col == getCell().col;
+  }
 private:
   // TODO
 };
