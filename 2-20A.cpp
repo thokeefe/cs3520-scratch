@@ -14,10 +14,10 @@ size_t index_of(const vector<string> & v, const string & s) {
   // TODO
   for (int i = 0; i < v.size(); i++) {
     if (v[i] == s) {
-        return i;
+      return i;
     }
   }
-  throw invalid_argument("String not found");
+  throw runtime_error("String not found");
 }
 
 int main() {

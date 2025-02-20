@@ -21,7 +21,7 @@ double mean_average(const vector<double> & v) {
   for (int i = 0; i < v.size(); i++) {
     sum += v[i];
   }
-  return sum;
+  return sum / v.size();
 }
 
 void read_and_average_numbers() {
@@ -31,7 +31,11 @@ void read_and_average_numbers() {
     v.push_back(x);
   }
   // TODO
-  cout << mean_average(v) << endl;
+  try {
+    cout << mean_average(v) << endl;
+  } catch (const invalid_argument & e) {
+    cout << "Error: " << e.what() << endl;
+  }
   // TODO
 }
 
