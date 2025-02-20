@@ -12,11 +12,12 @@ using namespace std;
 
 size_t index_of(const vector<string> & v, const string & s) {
   // TODO
-  for (int i; i < v.size(); i++) {
+  for (int i = 0; i < v.size(); i++) {
     if (v[i] == s) {
         return i;
     }
   }
+  throw invalid_argument("String not found");
 }
 
 int main() {
