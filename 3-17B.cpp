@@ -1,4 +1,3 @@
-
 /*
 Complete the implementation of MovableInt. A MovableInt holds a pointer to a dynamically allocated int that can be moved from 
 object to object (but not copied!).  An empty MovableInt has a null pointer.
