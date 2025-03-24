@@ -30,6 +30,12 @@ int main() {
         if (!swapped) break;
     }
 
+    //while(!numbers.empty()) {
+    //    std::pop_heap(numbers.begin(), numbers.end(), std::greater());
+    //    cout << numbers.back() << " ";
+    //    numbers.pop_back();
+    //}
+
     for(int i : numbers) {
         cout << i << " ";
     }
