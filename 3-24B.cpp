@@ -28,9 +28,9 @@ int main() {
 
   // TODO
   auto max_it = max_element(v.begin(), v.end());
-  int max_value = *max_it;
+  // int max_value = *max_it;
   
-  v.erase(remove(v.begin(), v.end(), max_value), v.end());
+  v.erase(remove(v.begin(), v.end(), *max_it), v.end());
   for (int i : v) {
     cout << i << " ";
   }
