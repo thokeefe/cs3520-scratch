@@ -1,5 +1,7 @@
 /*
-From the given implementation of TestList, implement the insert_after function for adding elements to the linked list using smart pointers.  Your implementation should not call new or delete directly, and should automatically deallocate all the objects allocated.
+From the given implementation of TestList, implement the insert_after function for adding elements to the linked list using 
+smart pointers.  Your implementation should not call new or delete directly, and should automatically deallocate all the 
+objects allocated.
 */
 
 #include <iostream>
