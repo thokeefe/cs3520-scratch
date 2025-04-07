@@ -10,7 +10,6 @@ queue<int> job_queue({ 12, 12, 18, 6, 3, 8, 9, 11, 21, 8, 8, 20, 7, 19, 6, 22, 8
 int do_job(int job_input, bool is_threaded_code = true) {
     static mutex output_lock;
     if (is_threaded_code) {
-        // Wait a bit, pretend to do work
         this_thread::sleep_for(chrono::milliseconds(job_input));
         scoped_lock lock(output_lock);
         cout << "Thread " << this_thread::get_id() << " finished job with input: " << job_input << endl;
